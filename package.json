@@ -1,0 +1,29 @@
+{
+    "name": "codacy-poc",
+    "version": "1.0.0",
+    "devDependencies": {
+        "bower": "~1.2",
+        "grunt": "~0.4",
+        "grunt-cli": "~0.1",
+        "grunt-requirejs": "~0.4",
+        "grunt-contrib-less": "~0.7",
+        "grunt-contrib-clean": "~0.5",
+        "grunt-contrib-jade": "~0.8",
+        "grunt-karma": "~0.7",
+        "grunt-express-server": "~0.4",
+        "grunt-contrib-jshint": "~0.6",
+        "grunt-nodemon": "~0.1",
+        "karma": "~0.10",
+        "karma-junit-reporter": "~0.1",
+        "express": "~3.4",
+        "requirejs": "~2.1",
+        "less": "~1.4",
+        "jade": "~0.35",
+        "lodash": "~2.2",
+        "moment": "~2.3",
+        "winston": "~0.7",
+        "portscanner": "~0.1",
+        "grunt-casper": "~0.1"
+    },
+    "serverPort": "5000"
+}

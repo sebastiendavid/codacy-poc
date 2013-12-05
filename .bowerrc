@@ -1,0 +1,4 @@
+{
+  "directory": "app/bower_components",
+  "shorthand_resolver": "git@gitrd.emv2.com:{{owner}}/{{package}}.git"
+}

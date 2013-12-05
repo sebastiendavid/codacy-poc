@@ -1,0 +1,33 @@
+doctype 5
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+        meta(name="viewport", content="width=device-width")
+
+        title codacy-poc
+
+        if env == "development"
+            link(type="text/css", rel="stylesheet", href="css/main.css")
+        else
+            link(type="text/css", rel="stylesheet", href="css/codacy-poc-" + version + min + ".css")
+
+    body
+
+        //[if lt IE 10]>
+            p
+                | You are using an
+                strong  outdated
+                |  browser. Please
+                a(href="http://browsehappy.com/")  upgrade your browser
+                |  or
+                a(href="http://www.google.com/chromeframe/?redirect=true")  activate Google Chrome Frame
+                |  to improve your experience.
+
+        //[if (!IE)|(gte IE 10)]>
+        if env == "development"
+            script(type="text/javascript", src="conf/deps.js")
+            script(type="text/javascript", src="bower_components/requirejs/require.js", data-main="scripts/main")
+        else
+            script(type="text/javascript", src="js/codacy-poc-" + version + min + ".js")
+        //<![endif]

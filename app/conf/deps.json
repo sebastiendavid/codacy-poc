@@ -1,0 +1,52 @@
+{
+    "paths": {
+        "backbone": "bower_components/backbone/backbone",
+        "marionette": "bower_components/marionette/backbone-marionette",
+        "handlebars": "bower_components/handlebars/dist/handlebars",
+        "jquery": "bower_components/jquery/jquery",
+        "knockback": "bower_components/knockback/knockback",
+        "knockout": "bower_components/knockout/knockout",
+        "moment": "bower_components/moment/moment",
+        "require-lib": "bower_components/requirejs/require",
+        "text": "bower_components/requirejs-text/require-text",
+        "underscore": "bower_components/lodash/lodash",
+        "loglevel": "bower_components/loglevel/loglevel",
+        "jasmine-jquery": "web-static-resources/jasmine-jquery#1.5.91",
+
+        "log": "scripts/utils/log",
+
+        "codacy-poc-main": "scripts/main",
+        "codacy-poc-app": "scripts/main/App",
+        "codacy-poc-router": "scripts/router/Router",
+        "codacy-poc-routes-controller": "scripts/router/RoutesController",
+        "codacy-poc-main-view": "scripts/main/MainView",
+        "codacy-poc-content-region": "scripts/main/ContentRegion"
+    },
+    "shim": {
+        "underscore": {
+            "exports": "_"
+        },
+        "jquery": {
+            "exports": "$"
+        },
+        "handlebars": {
+            "exports": "Handlebars"
+        },
+        "backbone": {
+            "deps": ["jquery", "underscore"],
+            "exports": "Backbone"
+        },
+        "marionette": {
+            "deps": ["backbone"],
+            "exports": "Backbone.Marionette"
+        },
+        "knockout": {
+            "deps": ["jquery"],
+            "exports": "ko"
+        },
+        "knockback": {
+            "deps": ["backbone", "knockout"],
+            "exports": "kb"
+        }
+    }
+}
